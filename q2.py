@@ -24,3 +24,26 @@ def control_digit(ID):
 
 x=control_digit("31629677")
 print (x)
+
+
+
+
+
+
+
+
+
+#1st solution
+m = num
+cnt = 0
+while m > 0:
+	if m % 10 == 0:
+		cnt = cnt + 1
+	m = m // 10
+
+#2nd solution
+cnt = 0
+snum = str(num) #num as a string
+for digit in snum:
+	if digit == "0":
+		cnt = cnt + 1
