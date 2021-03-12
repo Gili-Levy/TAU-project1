@@ -104,8 +104,6 @@ def max_div_seq(n, k):
 			max_cnt = cnt
 	return max_cnt
 
-print (max_div_seq(1357, 2))
-
 ########
 # Tester
 ########
@@ -143,5 +141,3 @@ def test():
 
     if SUBMISSION_IDS and not all(type(x)==str for x in SUBMISSION_IDS):
         print("The list of IDs contains elments that are not strings")
-
-   
