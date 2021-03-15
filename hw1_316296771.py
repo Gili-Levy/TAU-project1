@@ -1,5 +1,3 @@
-#you may NOT change the signature of the existing functions.
-
 SUBMISSION_IDS = ["316296771"]
 
 #Question 4a
@@ -76,6 +74,8 @@ def is_palindrome(text):
 
 #Question 5
 def calc(expression):
+	if expression == "":
+		return ""
 	exp = expression.split("'")
 	result = exp[1] # first index is '' - a0 is in [1]
 	for i in range(2, len(exp), 2): #every second index is a calc expression - */+
@@ -85,7 +85,6 @@ def calc(expression):
 			result = result+exp[i+1]
 			i=i+2
 	return result
-
 #Question 6
 def max_div_seq(n, k):
 	n=str(n)
